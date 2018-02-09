@@ -4,8 +4,10 @@
              xmlns:local="clr-namespace:PinClickDemo"
              x:Class="PinClickDemo.MainPage">
 
-	<Label Text="Welcome to Xamarin.Forms!" 
-           VerticalOptions="Center" 
-           HorizontalOptions="Center" />
+    <ContentPage.Content>
+        <StackLayout>
+            <local:ExtendedMap x:Name="Mapa"  Tap="Mapa_OnTap"/>
+        </StackLayout>
+    </ContentPage.Content>
 
 </ContentPage>
